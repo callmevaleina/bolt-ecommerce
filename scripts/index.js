@@ -241,6 +241,8 @@ cartCheckout.addEventListener('click', ()=>{
 
 const addToCart = document.querySelector('.home-btn')
 const addProduct = document.querySelectorAll('.products-btn')
+const cartCard = document.querySelectorAll('.cart-card')
+const trash = document.querySelectorAll('.trash')
     
 addProduct.forEach(button => {
     button.addEventListener('click', ()=>{
@@ -248,6 +250,24 @@ addProduct.forEach(button => {
         cartEmpty.style.display = 'none'
         cartFull.style.display = 'flex'
     })
+})
+
+trash[0].addEventListener('click', ()=>{
+        cartCard[0].style.display = 'none'
+        cartCard[1].style.display = 'flex'
+        cartCard[2].style.display = 'flex'
+})
+
+trash[1].addEventListener('click', ()=>{
+    cartCard[0].style.display = 'flex'
+    cartCard[1].style.display = 'none'
+    cartCard[2].style.display = 'flex'
+})
+
+trash[2].addEventListener('click', ()=>{
+    cartCard[0].style.display = 'flex'
+    cartCard[1].style.display = 'flex'
+    cartCard[2].style.display = 'none'
 })
 
 addToCart.addEventListener('click', ()=>{
