@@ -252,21 +252,15 @@ addProduct.forEach(button => {
     })
 })
 
-trash[0].addEventListener('click', ()=>{
-        cartCard[0].style.display = 'none'
-        cartCard[1].style.display = 'flex'
-        cartCard[2].style.display = 'flex'
+trash[0].addEventListener('click', ()=>{    
+    cartCard[0].style.display = 'none'
 })
 
 trash[1].addEventListener('click', ()=>{
-    cartCard[0].style.display = 'flex'
     cartCard[1].style.display = 'none'
-    cartCard[2].style.display = 'flex'
 })
 
 trash[2].addEventListener('click', ()=>{
-    cartCard[0].style.display = 'flex'
-    cartCard[1].style.display = 'flex'
     cartCard[2].style.display = 'none'
 })
 
