@@ -252,6 +252,7 @@ addProduct[0].addEventListener('click', ()=>{
         
     if(itemsQty.textContent < 5){
         itemsQty.textContent = counterHoodies += 1;
+        navItemsQty.textContent = counterHoodies;
         cartAmountNumber[0].textContent = counterHoodies + ' units'
         
         if(counterHoodies == 5){
@@ -270,6 +271,7 @@ addProduct[1].addEventListener('click', ()=>{
         
     if(itemsQty.textContent < 5){
         itemsQty.textContent = counterShirts += 1;
+        navItemsQty.textContent = counterShirts;
         cartAmountNumber[1].textContent = counterShirts + ' units'
         
         if(counterShirts == 5){
@@ -288,6 +290,7 @@ addProduct[2].addEventListener('click', ()=>{
         
     if(itemsQty.textContent < 5){
         itemsQty.textContent = counterSweatshirts += 1;
+        navItemsQty.textContent = counterSweatshirts;
         cartAmountNumber[2].textContent = counterSweatshirts + ' units'
         
         if(counterSweatshirts == 5){
