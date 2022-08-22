@@ -91,15 +91,36 @@ body {
    
 }
 
+.web-theme{
+    display: flex;
+    margin: 0;
+}
 .icon-bulb-off{
     color: var(--dark);
     width: 37px;
     height: 37px;
     margin-top: -4px;
     margin-left: -95%;
+    display: flex;
+
 }
 
 .icon-bulb-off:hover{
+    cursor: pointer;
+    color: var(--white);
+}
+
+.icon-bulb{
+    color: var(--dark);
+    width: 37px;
+    height: 37px;
+    margin-top: -4px;
+    margin-left: -95%;
+    display: flex;
+    display: none;
+}
+
+.icon-bulb:hover{
     cursor: pointer;
     color: var(--white);
 }
@@ -458,6 +479,12 @@ body {
 .product-filters a{
     text-decoration: none;
     color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 5px;
 }
 
 .product-filters a:hover{

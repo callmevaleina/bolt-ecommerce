@@ -1,12 +1,53 @@
 const navCart = document.querySelector('.nav-cart')
 const webTheme = document.querySelector('.web-theme')
+const bulbOff = document.querySelector('.icon-bulb-off')
+const bulb = document.querySelector('.icon-bulb')
+
 
 const cartClose = document.querySelector('.cart-close')
 const cartContainer = document.querySelector('.cart-container')
 const cartEmpty = document.querySelector('.cart-empty')
 const cartFull = document.querySelector('.cart-full')
 
+//! ===== WEB THEME 
 
+
+
+const focoOn = document.querySelector('.icon-bulb')
+const focoOff = document.querySelector('.icon-bulb-off')
+
+
+focoOn.addEventListener('click', () => {
+    
+    bulbOff.style.display = 'flex'
+    bulb.style.display = 'none'
+    document.body.style.background = 'var(--white)'
+    document.querySelectorAll('.nav-container a')[0].style.color = 'var(--dark)'
+    document.querySelectorAll('.nav-container a')[1].style.color = 'var(--dark)'
+    document.querySelectorAll('.nav-container a')[2].style.color = 'var(--dark)'
+    document.querySelector('.home-title').style.color = 'var(--dark)'
+    document.querySelector('.home-description').style.color = 'var(--dark)'
+    
+}) 
+    
+
+focoOff.addEventListener('click', () =>{
+    bulb.style.display = 'flex'
+    bulbOff.style.display = 'none'
+    document.body.style.background = 'var(--dark)'
+    document.querySelectorAll('.nav-container a')[0].style.color = 'var(--white)'
+    document.querySelectorAll('.nav-container a')[1].style.color = 'var(--white)'
+    document.querySelectorAll('.nav-container a')[2].style.color = 'var(--white)'
+    document.querySelector('.home-title').style.color = 'var(--white)'
+    document.querySelector('.home-description').style.color = 'var(--white)'
+    document.querySelector('.products-filter-container').style.background = 'var(--secondary)'
+    document.querySelector('.products-filter-container').style.borderRadius = '20px'
+    document.querySelectorAll('.product-card')[0].style.filter = 'drop-shadow(0 0 0.2rem var(--white))'
+    document.querySelectorAll('.product-card')[1].style.filter = 'drop-shadow(0 0 0.2rem var(--white))'
+    document.querySelectorAll('.product-card')[2].style.filter = 'drop-shadow(0 0 0.2rem var(--white))'      
+
+})       
+       
 //! ===== CART EMPTY
 
 navCart.addEventListener('click', (e) => {
