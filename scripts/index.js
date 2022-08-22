@@ -243,14 +243,62 @@ const addToCart = document.querySelector('.home-btn')
 const addProduct = document.querySelectorAll('.products-btn')
 const cartCard = document.querySelectorAll('.cart-card')
 const trash = document.querySelectorAll('.trash')
+const cartAmountNumber = document.querySelectorAll('.cart-amount-number')
     
-addProduct.forEach(button => {
-    button.addEventListener('click', ()=>{
-        cartContainer.style.display = 'flex'
-        cartEmpty.style.display = 'none'
-        cartFull.style.display = 'flex'
-    })
+addProduct[0].addEventListener('click', ()=>{
+    cartContainer.style.display = 'flex'
+    cartEmpty.style.display = 'none'
+    cartFull.style.display = 'flex'
+        
+    if(itemsQty.textContent < 5){
+        itemsQty.textContent = counterHoodies += 1;
+        cartAmountNumber[0].textContent = counterHoodies + ' units'
+        
+        if(counterHoodies == 5){
+            alert('There is not more stock')
+        }
+        cartSubtotal[0].textContent = `Subtotal: $${counterHoodies * 20}.00`;
+        cartTotal.textContent = `$${ counterHoodies * 20 + counterShirts * 10 + counterSweatshirts * 25}.00`;
+    
+    }   
 })
+
+addProduct[1].addEventListener('click', ()=>{
+    cartContainer.style.display = 'flex'
+    cartEmpty.style.display = 'none'
+    cartFull.style.display = 'flex'
+        
+    if(itemsQty.textContent < 5){
+        itemsQty.textContent = counterShirts += 1;
+        cartAmountNumber[1].textContent = counterShirts + ' units'
+        
+        if(counterShirts == 5){
+            alert('There is not more stock')
+        }
+        cartSubtotal[1].textContent = `Subtotal: $${counterShirts * 10}.00`;
+        cartTotal.textContent = `$${ counterHoodies * 20 + counterShirts * 10 + counterSweatshirts * 25}.00`;
+    
+    }   
+})
+
+addProduct[2].addEventListener('click', ()=>{
+    cartContainer.style.display = 'flex'
+    cartEmpty.style.display = 'none'
+    cartFull.style.display = 'flex'
+        
+    if(itemsQty.textContent < 5){
+        itemsQty.textContent = counterSweatshirts += 1;
+        cartAmountNumber[2].textContent = counterSweatshirts + ' units'
+        
+        if(counterSweatshirts == 5){
+            alert('There is not more stock')
+        }
+        cartSubtotal[2].textContent = `Subtotal: $${counterSweatshirts * 25}.00`;
+        cartTotal.textContent = `$${ counterHoodies * 20 + counterShirts * 10 + counterSweatshirts * 25}.00`;
+    
+    }   
+})
+
 
 
 trash[0].addEventListener('click', ()=>{    
