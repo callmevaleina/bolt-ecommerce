@@ -11,8 +11,6 @@ const cartFull = document.querySelector('.cart-full')
 
 //! ===== WEB THEME 
 
-
-const iconCart = document.querySelector('.icon-cart')
 const focoOn = document.querySelector('.icon-bulb')
 const focoOff = document.querySelector('.icon-bulb-off')
 
@@ -25,7 +23,7 @@ focoOn.addEventListener('click', () => {
     document.querySelectorAll('.nav-container a')[0].style.color = 'var(--dark)'
     document.querySelectorAll('.nav-container a')[1].style.color = 'var(--dark)'
     document.querySelectorAll('.nav-container a')[2].style.color = 'var(--dark)'
-    document.querySelector('.nav-btns').style.background = 'var(--white)'
+    document.querySelector('.nav-btns').style.background = 'var(--primary)'
     iconCart.style.color = 'var(--dark)'
     document.querySelector('.home-title').style.color = 'var(--dark)'
     document.querySelector('.home-description').style.color = 'var(--dark)'
@@ -41,9 +39,7 @@ focoOff.addEventListener('click', () =>{
     document.querySelectorAll('.nav-container a')[0].style.color = 'var(--white)'
     document.querySelectorAll('.nav-container a')[1].style.color = 'var(--white)'
     document.querySelectorAll('.nav-container a')[2].style.color = 'var(--white)'
-    document.querySelector('.nav-btns').style.background = 'var(--dark)'
-    bulb.style.color = 'var(--white)'
-    iconCart.style.color = 'var(--white)'
+    document.querySelector('.nav-btns').style.background = 'var(--primary)'
     document.querySelector('.home-title').style.color = 'var(--white)'
     document.querySelector('.home-description').style.color = 'var(--white)'
     document.querySelector('.products-filter-container').style.background = 'var(--secondary)'
