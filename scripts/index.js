@@ -351,6 +351,9 @@ trash[0].addEventListener('click', ()=>{
     cartCard[0].style.display = 'none'
     if (cartCard[0].style.display == 'none' && cartCard[1].style.display == 'none' && cartCard[2].style.display == 'none'){
         cartEmpty.style.display = 'flex'
+        cartTotal.textContent = '$0.00'
+        itemsQty.textContent = '0'
+        navItemsQty.textContent = '0'
     }
    
 })
@@ -359,6 +362,9 @@ trash[1].addEventListener('click', ()=>{
     cartCard[1].style.display = 'none'
     if (cartCard[0].style.display == 'none' && cartCard[1].style.display == 'none' && cartCard[2].style.display == 'none'){
         cartEmpty.style.display = 'flex'
+        cartTotal.textContent = '$0.00'
+        itemsQty.textContent = '0'
+        navItemsQty.textContent = '0'
     }
     
 })
@@ -367,6 +373,9 @@ trash[2].addEventListener('click', ()=>{
     cartCard[2].style.display = 'none'
     if (cartCard[0].style.display == 'none' && cartCard[1].style.display == 'none' && cartCard[2].style.display == 'none'){
         cartEmpty.style.display = 'flex'
+        cartTotal.textContent = '$0.00'
+        itemsQty.textContent = '0'
+        navItemsQty.textContent = '0'
     }
 })
 
