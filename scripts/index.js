@@ -330,6 +330,7 @@ addProduct[2].addEventListener('click', ()=>{
     cartContainer.style.display = 'flex'
     cartEmpty.style.display = 'none'
     cartFull.style.display = 'flex'
+
         
     if(itemsQty.textContent < 5){
         itemsQty.textContent = counterSweatshirts += 1;
