@@ -40,7 +40,6 @@ focoOff.addEventListener('click', () =>{
     document.querySelectorAll('.nav-container a')[2].style.color = 'var(--white)'
     document.querySelector('.home-title').style.color = 'var(--white)'
     document.querySelector('.home-description').style.color = 'var(--white)'
-    document.querySelector('.products-filter-container').style.background = 'var(--secondary)'
     document.querySelector('.products-filter-container').style.borderRadius = '20px'
     document.querySelectorAll('.product-card')[0].style.filter = 'drop-shadow(0 0 0.2rem var(--white))'
     document.querySelectorAll('.product-card')[1].style.filter = 'drop-shadow(0 0 0.2rem var(--white))'
