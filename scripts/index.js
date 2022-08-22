@@ -375,6 +375,19 @@ addToCart.addEventListener('click', ()=>{
     cartContainer.style.display = 'flex'
     cartEmpty.style.display = 'none'
     cartFull.style.display = 'flex'
+
+    if(itemsQty.textContent < 5){
+        itemsQty.textContent = counterHoodies += 1;
+        navItemsQty.textContent = counterHoodies;
+        cartAmountNumber[0].textContent = counterHoodies + ' units'
+        
+        if(counterHoodies == 5){
+            alert('There is not more stock')
+        }
+        cartSubtotal[0].textContent = `Subtotal: $${counterHoodies * 20}.00`;
+        cartTotal.textContent = `$${ counterHoodies * 20 + counterShirts * 10 + counterSweatshirts * 25}.00`;
+    
+    }  
 })
 
 //! ===== PRODUCTS FILTERS
