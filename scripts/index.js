@@ -252,17 +252,30 @@ addProduct.forEach(button => {
     })
 })
 
+
 trash[0].addEventListener('click', ()=>{    
     cartCard[0].style.display = 'none'
+    if (cartCard[0].style.display == 'none' && cartCard[1].style.display == 'none' && cartCard[2].style.display == 'none'){
+        cartEmpty.style.display = 'flex'
+    }
+   
 })
 
 trash[1].addEventListener('click', ()=>{
     cartCard[1].style.display = 'none'
+    if (cartCard[0].style.display == 'none' && cartCard[1].style.display == 'none' && cartCard[2].style.display == 'none'){
+        cartEmpty.style.display = 'flex'
+    }
+    
 })
 
 trash[2].addEventListener('click', ()=>{
     cartCard[2].style.display = 'none'
+    if (cartCard[0].style.display == 'none' && cartCard[1].style.display == 'none' && cartCard[2].style.display == 'none'){
+        cartEmpty.style.display = 'flex'
+    }
 })
+
 
 addToCart.addEventListener('click', ()=>{
     cartContainer.style.display = 'flex'
